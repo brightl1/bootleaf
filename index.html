@@ -26,7 +26,7 @@
     <link rel="icon" sizes="196x196" href="assets/img/favicon-196.png">
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
   </head>
-
+<!-- Nav bar -->
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container-fluid">
@@ -63,52 +63,175 @@
       </div>
     </div>
 
-    <div id="container">
-      <div id="sidebar">
-        <div class="sidebar-wrapper">
-          <div class="panel panel-default" id="features">
-            <div class="panel-heading">
-              <h3 class="panel-title">Category Layer Toggle
-              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3>
-            </div>
-            <div class="panel-body">
-              <div class="row">
-                <div class="col-xs-8 col-md-8">
-                  <input type="text" class="form-control search" placeholder="Filter" />
+    <!-- Sidebar -->
+        <div class="row" id="container">
+            <div class="col-sm-3 col-lg-3" id="sidebar" style="padding: 10px; overflow: auto;">
+                <ul class="nav nav-tabs" id="myTab">
+ <!-- Sidebar navigation -->                	
+                	<li class ="active" style="color: green"><a href="#test" data-toggle="tab" style="color: black"><i class="fa fa-spinner"></i>&nbsp;Welcome</a></li>
+                	
+                    <li><a href="#layers" data-toggle="tab" style="color: black"><i class="fa fa-check-square-o"></i>&nbsp;Layers</a></li>
+                    
+                    
+                </ul>
+
+                <div class="tab-content" style="padding-top: 10px;">  
+                    <div class="tab-pane active" id="test">
+                    	
+                    
+                        <div class="panel-group">
+   <!-- First Tab -->                      
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_" href="#overlay-test" style="color: green">
+                                        Welcome to the <i>ieldran</i> database
+                                    </a>
+                                </div>
+                                <div id="overlay-test" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding: 0px 15px;">
+                
+                                      
+                                            <label>
+                                                The Early Anglo-Saxon Mapping Project provides locations, summaries, and information about citation and collections for numerous cemeteries from this period.  The primary feature is a map that shows locations of cemeteries in England dating from the mid-4th to late 7th century CE. Each site can be clicked on to reveal more information about the cemetery, the burials, associated artifacts, references for books and journal articles written about the cemetery, and where the original excavation materials, human remains, and artifacts are kept.
+                                            </label>
+                   
+                                  
+                                    </div>
+                                </div>
+                            </div>
+ <!-- Second heading -->                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <label>
+                                    	<a style="color: green">Adding information </a>
+                                    </label>
+                                </div>
+                                <div id="basemap-layers" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding: 0px 15px;">
+                                            <label>
+                                                This is a community sourced project. In the near future, you will be able to submit your data to the project, whether it consist of a cemetery we missed, corrections about current data, or additional citations.
+                                            </label>                                 
+                                    </div>
+                                </div>
+                            </div>
+   <!-- Third heading -->                          
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <label>
+                                    	<a style="color: green">License and Attribution </a>
+                                    </label>
+                                </div>
+                                <div id="basemap-layers" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding: 0px 15px;">
+                                            <label>
+                                            	<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title"><i>ieldran</i></span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ieldran.matrix.msu.edu" property="cc:attributionName" rel="cc:attributionURL" style="color: green">Katy Meyers and Matt Austin</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" style="color: green">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />
+                                            	<p>Attribution: Meyers and Austin 2014. <i>ieldran</i>: The Early Anglo-Saxon Mapping Project. <i>Electronic Document</i><a href "http://ieldran.matrix.msu.edu" style="color: green"> http://ieldran.matrix.msu.edu</a></p>
+                                                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />
+                                            </label>                                 
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+  <!-- Second tab -->                   
+                    <div class="tab-pane" id="layers">
+                    	
+                    
+                        <div class="panel-group">
+                        
+                        <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_" href="#overlay-layers" style="color: green">
+                                        Navigating the <i>ieldran</i> database
+                                    </a>
+                                </div>
+                                <div id="overlay-layers" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding: 0px 15px;">
+                
+                                      
+                                            <label>
+                                                This tab will help you dynamically navigate the cemeteries!
+                                            </label>
+                   
+                                  
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_" href="#overlay-layers" style="color: green">
+                                        Overlay Layers
+                                    </a>
+                                </div>
+                                <div id="overlay-layers" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding: 0px 15px;">
+                
+                                        <div class="text">
+                                            <label>
+                                                <input type="checkbox" name="overlayLayers" id="cemeteries" z-index="3" checked>
+                                                Mixed Cemeteries   &nbsp;<img src="img/pingreen.png" width="20" height="28">
+                                            </label>
+                   
+                                        </div>
+                                         <div class="text">
+                                            <label>
+                                                <input type="checkbox" name="overlayLayers" id="cremation" z-index="3" checked>
+                                                Cremation Cemeteries   &nbsp;<img src="img/pinblue.png" width="20" height="28">
+                                            </label>
+                   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion_" href="#basemap-layers" style="color: green">
+                                        Basemaps
+                                    </a>
+                                </div>
+                                <div id="basemap-layers" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="padding: 0px 15px;">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="basemapLayers" id="mapquestOSM" checked>
+                                                Streets
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="basemapLayers" id="mapquestOAM">
+                                                Imagery
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="basemapLayers" id="mapquestHYB">
+                                                Hybrid
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                   
                 </div>
-                <div class="col-xs-4 col-md-4">
-                  <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i>&nbsp;&nbsp;Sort</button>
+            </div>
+            <div class="col-sm-9 col-lg-9" id="map">
+                <div id="loading" style="display: block;">
+                    <div class="loading-indicator">
+                        <div class="progress progress-striped active">
+                            <div class="progress-bar progress-bar-info" style="width: 100%"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="sidebar-table">
-              <table class="table table-hover" id="feature-list">
-                <thead class="hidden">
-                  <tr>
-                    <th>Icon</th>
-                  <tr>
-                  <tr>
-                    <th>Name</th>
-                  <tr>
-                  <tr>
-                    <th>Chevron</th>
-                  <tr>
-                </thead>
-                <tbody class="list"></tbody>
-              </table>
-            </div>
-          </div>
         </div>
-      </div>
-      <div id="map"></div>
-    </div>
-    <div id="loading">
-      <div class="loading-indicator">
-        <div class="progress progress-striped active">
-          <div class="progress-bar progress-bar-info progress-bar-full"></div>
-        </div>
-      </div>
-    </div>
 
     <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog">
       <div class="modal-dialog modal-lg">
